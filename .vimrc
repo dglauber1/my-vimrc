@@ -33,7 +33,6 @@ set smarttab
 set scrolloff=5
 set backspace=indent,eol,start
 set whichwrap+=<,>,h,l
-map 0 ^
 map Y y$
 map <C-j> <C-W>j
 map <C-k> <C-W>k
