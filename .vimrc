@@ -1,6 +1,7 @@
 let mapleader = ","
 let g:mapleader = ","
 nmap <leader>w :w<cr>
+map <silent> <leader><cr> :noh<cr>
 syntax enable
 set autoread
 set number
@@ -8,7 +9,6 @@ set relativenumber
 filetype plugin indent on
 set hidden
 set hlsearch
-map <silent> <leader><cr> :noh<cr>
 set incsearch
 set wildmenu
 set showcmd
