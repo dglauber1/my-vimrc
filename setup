@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
-ln ./.vimrc ~/.vimrc
-echo "Hard link to .vimrc setup in home directory"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+ln $DIR/.vimrc ~/.vimrc
+if [ $? -eq 0 ]
+then
+  echo "Hard link to .vimrc setup in home directory"
+  exit 0
+else
+  echo "Could not setup .vimrc" >&2
+  exit 1
+fi
 
