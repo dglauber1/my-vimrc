@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+ln ./.vimrc ~/.vimrc
+echo "Hard link to .vimrc setup in home directory"
+
